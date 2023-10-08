@@ -5,8 +5,8 @@ export default function SectionConsultorio() {
 
     return(
         <div>
-            <h2>appLimpieza</h2>
-            <p>El Front-End fue desarrollado en React-native</p>
+            <h1>Consultorio Esteticista</h1>
+            <p>Proyecto realizado en el año 2019, utilizando PHP, SQL y corriendo en un servidor local APACHE. Actualmente sigue en funcionamiento</p>
             <div id="myCarousel" className="carousel slide mb-6"  data-bs-ride="carousel">
                 <div className="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

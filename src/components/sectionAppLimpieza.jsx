@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 export default function SectionAppLimpieza(){
     return(
         <div>
-            <h1>appLimpieza</h1>
+            <h1 id='appLimpieza'>appLimpieza</h1>
             <div className="container px-4 py-5">
                 <h2 className="pb-2 border-bottom text-left">Funcionalidades</h2>
                 <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
@@ -67,7 +67,7 @@ export default function SectionAppLimpieza(){
                             <i class="bi bi-collection"></i>
                         </div>
                         <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Marcar tareas</h4>
-                        <p className="text-body-secondary text-left">Un usuario puede marcar completadas sus propias tareas y el usuario que tiene permiso las puede marcar controladas</p>
+                        <p className="text-body-secondary text-left">Lorem ipsum dolor sit amet consectetur adipisicing e</p>
                     </div>
 
                     <div className="col d-flex flex-column gap-2">
