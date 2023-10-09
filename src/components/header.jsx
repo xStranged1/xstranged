@@ -13,7 +13,7 @@ export default function Header () {
                 <ul className="nav nav-pills">
                     <li className="nav-item"><a href="#appLimpieza" className="nav-link active">appLimpieza</a></li>
                     <li className="nav-item"><a href="#CasaLaCosta" className="nav-link">CasaLaCosta</a></li>
-                    <li className="nav-item"><a href="#Esteticista" className="nav-link">Esteticista</a></li>
+                    <li className="nav-item"><a href="#Consultorio" className="nav-link">Esteticista</a></li>
                     <li className="nav-item"><a href="#Contacto" className="nav-link">Contacto</a></li>
                 </ul>
             </header>

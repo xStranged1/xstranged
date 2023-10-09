@@ -8,6 +8,7 @@
 .text-right{
   text-align: right;
 }
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -186,7 +187,6 @@ body {
 .carousel-item {
   height: 32rem;
 }
-
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
