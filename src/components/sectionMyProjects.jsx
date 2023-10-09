@@ -1,6 +1,6 @@
 
 import house from '../assets/house.png'
-
+import esmalte from '../assets/esmalte.png'
 export default function SectionMyProjects() {
     return(
         <div>
@@ -31,11 +31,11 @@ export default function SectionMyProjects() {
                 </div>
                 <div className="feature col">
                     <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg className="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+                        <img src={esmalte} className="bi me-2" width="100" height="100"/>
                     </div>
                     <h3 className="fs-2 text-body-emphasis">Consultorio Laura Bottarini</h3>
                     <p>Sistema web local para gestionar clientes y turnos de un consultorio esteticista</p>
-                    <button type="button" className="btn btn-outline-secondary btn-lg px-4">Ver más</button>
+                    <button type="button" className="btn btn-outline-secondary btn-lg px-4" onClick={()=>{window.location.href = '#Consultorio'}}>Ver más</button>
                 </div>
                 </div>
             </div>
