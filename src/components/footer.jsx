@@ -5,10 +5,10 @@ export default function Footer(){
             <div className="container">
             <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div className="col-md-4 d-flex align-items-center">
-                <a href="https://github.com/xStranged1" target="_blank" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <a href="https://github.com/xStranged1" target="_blank" className="mb-1 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" >
                     <i className="bi-github fs-3"></i>
                 </a>
-                    <span className="mb-3 mb-md-0 text-body-secondary">&copy; xStranged1</span>
+                    <span className="mb-1 mb-md-0 text-body-secondary">&copy; xStranged1</span>
                 </div>
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex"> 
                     <li className="ms-3"><a className="text-body-secondary" href="mailto:fede.valle04@gmail.com"><i className="bi bi-google fs-4"></i></a></li>

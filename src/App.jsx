@@ -18,8 +18,12 @@ function App() {
       <SectionMe />
       
       <SectionMyProjects />
+      <div className='b-example-divider'/>
+      <div style={{marginTop: 70}} />
       <SectionAppLimpieza />
-      <div class="b-example-divider"></div>
+      
+      <div className='b-example-divider'/>
+
       <SectionConsultorio />
       <Footer />
 
