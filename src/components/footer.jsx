@@ -10,10 +10,10 @@ export default function Footer(){
                 </a>
                     <span className="mb-1 mb-md-0 text-body-secondary">&copy; xStranged1</span>
                 </div>
-                <ul className="nav col-md-4 justify-content-end list-unstyled d-flex"> 
-                    <li className="ms-3"><a className="text-body-secondary" href="mailto:fede.valle04@gmail.com"><i className="bi bi-google fs-4"></i></a></li>
-                    <li className="ms-3"><a className="text-body-secondary" href="https://www.instagram.com/fedevalle1/"><i className="bi bi-instagram fs-4"></i></a></li>
-                    <li className="ms-3"><a className="text-body-secondary" href="#"><i className="bi bi-discord fs-4"></i></a></li>
+                <ul className="nav justify-content-end list-unstyled d-flex mt-2"> 
+                    <li className="ms-3"><p className="text-body-secondary">fede.valle04@gmail.com</p> </li>
+                    <li className="ms-3"><a className="text-body-secondary" about="_blank" href="https://www.instagram.com/fedevalle1/"><i className="bi bi-instagram fs-4"></i></a></li>
+                    <li className="ms-3"><a className="text-body-secondary" about="_blank" href="#"><i className="bi bi-discord fs-4"></i></a></li>
                 </ul>
             </footer>
             </div>

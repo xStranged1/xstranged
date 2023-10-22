@@ -11,6 +11,7 @@ import screen1 from '../assets/screens-appLimpieza/screenEjemplo.jpeg'
 export default function SectionAppLimpieza(){
 
     const carbon = {
+        
         color: "#07183f",
         textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
       };
@@ -37,13 +38,13 @@ export default function SectionAppLimpieza(){
                 
 
 
-                    <div id="myCarousel" className="carousel slide mb-6"  data-bs-ride="carousel">
+                    <div id="carrouselAppLimpieza" className="carousel slide mb-6"  data-bs-ride="carousel" style={{width: 300}}>
                         <div className="carousel-indicators">
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="4" aria-label="Slide 6"></button>
 
                         </div>
                         <div className="carousel-inner">
@@ -125,11 +126,11 @@ export default function SectionAppLimpieza(){
                             </div>
                         </div>
                         </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide="prev">
                         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Previous</span>
                         </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                        <button className="carousel-control-next" type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide="next">
                         <span className="carousel-control-next-icon" aria-hidden="true"></span>
                         <span className="visually-hidden">Next</span>
                 </button>
