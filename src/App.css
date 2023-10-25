@@ -187,7 +187,10 @@ body {
 .carousel-item {
   height: 32rem;
 }
-
+.arrow-black {
+  color: "#000";
+  background-color: "#000";
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
