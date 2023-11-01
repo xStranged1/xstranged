@@ -3,25 +3,35 @@ import imgFirebase from '../assets/imgFirebase.png'
 import imgReact from '../assets/imgReact.png'
 import imgExpo from '../assets/imgExpo.png'
 import imgNotification from '../assets/imgNotification.png'
-
-import screenSignIn from '../assets/screens-appLimpieza/screenSignIn.jpg'
-import screenLogIn from '../assets/screens-appLimpieza/screenLogIn.jpg'
-import screen1 from '../assets/screens-appLimpieza/screenEjemplo.jpeg'
+import screenSignIn from '../assets/screens-appLimpieza/screenSignIn.png'
+import screenLogIn from '../assets/screens-appLimpieza/screenLogIn.png'
 import gif from '../assets/screens-appLimpieza/gif.gif'
+import screen1 from '../assets/screens-appLimpieza/screen1.png'
+import videoHome from '../assets/screens-appLimpieza/videoHome.mp4'
+import video1 from '../assets/screens-appLimpieza/sw.mp4'
+import { useState } from 'react'
 
-import video1 from '../assets/screens-appLimpieza/video1.mp4'
+
 
 export default function SectionAppLimpieza(){
 
+    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
     const carbon = {
+        userSelect: 'none',
         fontSize: 30,
         color: "#07183f",
         textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
-        opacity: 0.6,
+        opacity: 0.75,
+        marginBottom:-25,
       };
       
+    const handleIndicators = () => {
+        isVideoPlaying ? setIsVideoPlaying(false) : setIsVideoPlaying(true)
+      }
+
     const handleCarousel = () =>{
-        console.log('hola');
+        // console.log('hola');
     }
     return(
         <div id='appLimpieza'>
@@ -41,20 +51,22 @@ export default function SectionAppLimpieza(){
                         <div style={{marginLeft: 10}}/>
                         <img src={imgExpo} className="bi me-2" width="55" height="55"/>
                     </div>
-                    <p className="text-body-secondary text-center">Lorem ipsum dolor sit amet  incidunt explicabo ut corrupti?</p>
+                    <h3 className="fs-2 text-body">React Native, Firebase y Expo</h3>
+                    <p className="text-body-secondary text-center">Desarrollado con React Native, Firebase y Expo.</p>
                 
 
 
-                    <div id="carrouselAppLimpieza" className="carousel slide mb-6"  data-bs-ride="carousel" style={{width: 350}}>
-                        <div className="carousel-indicators">
+                    <div id="carrouselAppLimpieza" className="carousel slide mb-6"  data-bs-ride="carousel" style={{width: 316}}>
+                        <div className = {isVideoPlaying ? 'carousel-indicators ds-none' : 'carousel-indicators '} >
                             <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="4" aria-label="Slide 6"></button>
+                            <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="5" aria-label="Slide 6"></button>
                         </div>
                         <div className="carousel-inner">
-                            <div className="carousel-item active" data-interval="2000" style={{backgroundColor: "#fff"}}>
+                            <div className="carousel-item active" data-bs-interval="10000" style={{backgroundColor: "#fff"}}>
                                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
                                         <image
@@ -65,14 +77,39 @@ export default function SectionAppLimpieza(){
                                 </svg>
                                 <div className="container">
                                     <div className="carousel-caption">
+                                            <h1 style={carbon}>SignIn</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item" data-bs-interval="10000">
+                                <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                                        <image
+                                            href={screenLogIn}
+                                            width="100%"
+                                            height="100%"
+                                        />
+                                </svg>
+                                <div className="container">
+                                    <div className="carousel-caption">
                                         <h1 style={carbon}>Login</h1>
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-interval="1000" >
-                                        <video width="100%" height="100%" controls>
+                            <div className="carousel-item" data-bs-interval="60000" >
+                                        <video width="100%" height="100%" controls onPause={handleIndicators} onPlay={handleIndicators}>
+                                            <source src={videoHome} type="video/mp4" />
+                                        </video>
+
+                                <div className="container">
+                                    <div className="carousel-caption">
+                                        <h1 style={carbon}>Home</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item" data-bs-interval="60000" >
+                                        <video width="100%" height="100%" autoPlay>
                                             <source src={video1} type="video/mp4" />
-                                            Tu navegador no soporta la reproducción de video.
                                         </video>
 
                                 <div className="container">
@@ -81,7 +118,7 @@ export default function SectionAppLimpieza(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-interval="1000">
+                            <div className="carousel-item" data-bs-interval="10000">
                                 <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
                                         <image
@@ -98,10 +135,11 @@ export default function SectionAppLimpieza(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-interval="1000">
+                            <div className="carousel-item" data-bs-interval="10000">
                                 <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
                                         <image
+                                            href={screen1}
                                             width="100%"
                                             height="100%"
                                         />
@@ -113,10 +151,11 @@ export default function SectionAppLimpieza(){
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-interval="1000">
+                            <div className="carousel-item" data-bs-interval="10000">
                                 <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
                                         <image
+                                            href={screen1}
                                             width="100%"
                                             height="100%"
                                         />

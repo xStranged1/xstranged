@@ -5,10 +5,10 @@ import casaLaCosta from '../assets/casaLaCosta.png'
 export default function SectionMyProjects() {
     return(
         <div>
-            <h1 className="visually-hidden">Features examples</h1>
+            <h1 className="visually-hidden">Proyectos</h1>
 
             <div className="container px-4 py-5" id="featured-3">
-                <h2 className="pb-2 border-bottom">Algunos de mis proyectos</h2>
+                <h2 className="pb-2 border-bottom text-body-emphasis">Algunos de mis proyectos</h2>
                 <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
                 <div className="feature col">
                     <div className="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">

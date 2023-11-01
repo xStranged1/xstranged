@@ -8,10 +8,11 @@ export default function Footer(){
                     <span className="mb-1 me-2 mb-md-0 text-body-secondary lh-1" >
                         <i className="bi-github fs-3"></i>
                     </span>
-                    <span className="mb-1 mb-md-0 text-body-secondary">&copy; xStranged1</span>
+                    <span className="mb-1 mb-md-0 text-body-secondary"> xStranged1</span>
                 </a>
-                    <ul className="nav justify-content-end list-unstyled d-flex mt-2 align-items-baseline"> 
+                    <ul className="nav justify-content-end list-unstyled d-flex mt-2 align-items-baseline">
                         <li className="ms-3"><p className="text-body-secondary">fede.valle04@gmail.com</p> </li>
+                        <li className="ms-3"><a className="text-body-secondary" target="_blank" href="https://www.linkedin.com/in/federico-valle-d440a/"><i className="bi bi-linkedin fs-4"></i></a></li>
                         <li className="ms-3"><a className="text-body-secondary" target="_blank" href="https://www.instagram.com/fedevalle1/"><i className="bi bi-instagram fs-4"></i></a></li>
                         <li className="ms-3"><a className="text-body-secondary" target="_blank" href="#"><i className="bi bi-discord fs-4"></i></a></li>
                     </ul>
