@@ -1,4 +1,3 @@
-import 'bootstrap/dist/js/bootstrap.bundle.js'
 import imgFirebase from '../assets/imgFirebase.png'
 import imgReact from '../assets/imgReact.png'
 import imgExpo from '../assets/imgExpo.png'
@@ -8,14 +7,14 @@ import screenLogIn from '../assets/screens-appLimpieza/screenLogIn.png'
 import gif from '../assets/screens-appLimpieza/gif.gif'
 import screen1 from '../assets/screens-appLimpieza/screen1.png'
 import videoHome from '../assets/screens-appLimpieza/videoHome.mp4'
-import video1 from '../assets/screens-appLimpieza/sw.mp4'
+import videoHist from '../assets/screens-appLimpieza/videoHist.mp4'
 import { useState } from 'react'
-
 
 
 export default function SectionAppLimpieza(){
 
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
 
     const carbon = {
         userSelect: 'none',
@@ -23,16 +22,26 @@ export default function SectionAppLimpieza(){
         color: "#07183f",
         textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
         opacity: 0.75,
-        marginBottom:-25,
+        marginBottom: -18,
       };
       
     const handleIndicators = () => {
         isVideoPlaying ? setIsVideoPlaying(false) : setIsVideoPlaying(true)
       }
-
+    
     const handleCarousel = () =>{
         // console.log('hola');
     }
+    const Video = () => {
+    
+        return(
+                <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators}>
+                    <source src={videoHome} type="video/mp4" />
+                </video>
+        )
+    }
+
+    
     return(
         <div id='appLimpieza'>
             <h1 className="display-5 fw-bold text-body-emphasis">appLimpieza</h1>
@@ -56,7 +65,7 @@ export default function SectionAppLimpieza(){
                 
 
 
-                    <div id="carrouselAppLimpieza" className="carousel slide mb-6"  data-bs-ride="carousel" style={{width: 316}}>
+                    <div id="carrouselAppLimpieza" className="carousel slide mb-6"  data-bs-ride="carousel" style={{width: 356,}}>
                         <div className = {isVideoPlaying ? 'carousel-indicators ds-none' : 'carousel-indicators '} >
                             <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -77,7 +86,7 @@ export default function SectionAppLimpieza(){
                                 </svg>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                            <h1 style={carbon}>SignIn</h1>
+                                            <h1 style={carbon}>Sign in</h1>
                                     </div>
                                 </div>
                             </div>
@@ -97,10 +106,9 @@ export default function SectionAppLimpieza(){
                                 </div>
                             </div>
                             <div className="carousel-item" data-bs-interval="60000" >
-                                        <video width="100%" height="100%" controls onPause={handleIndicators} onPlay={handleIndicators}>
-                                            <source src={videoHome} type="video/mp4" />
-                                        </video>
-
+                                            <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators}>
+                                                <source src={videoHome} type="video/mp4" />
+                                            </video>
                                 <div className="container">
                                     <div className="carousel-caption">
                                         <h1 style={carbon}>Home</h1>
@@ -108,13 +116,13 @@ export default function SectionAppLimpieza(){
                                 </div>
                             </div>
                             <div className="carousel-item" data-bs-interval="60000" >
-                                        <video width="100%" height="100%" autoPlay>
-                                            <source src={video1} type="video/mp4" />
-                                        </video>
+                                        <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators} > 
+                                                <source src={videoHist} type="video/mp4" />
+                                            </video>
 
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={carbon}>Pantalla1</h1>
+                                        <h1 style={carbon}>Historial</h1>
                                     </div>
                                 </div>
                             </div>
@@ -240,14 +248,14 @@ export default function SectionAppLimpieza(){
                                 <img src={imgNotification} width={33} height={33} alt="" />
                             </div>
                             <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Notificaciones</h4>
-                            <p className="text-body-secondary text-left">El sistema notifica a los usuarios si no marcaron completadas sus tareas</p>
+                            <p className="text-body-secondary text-left">El sistema puede notificar a los usuarios cuando se les asignan tareas, si no marcaron completadas sus tareas</p>
                         </div>
                         
 
                         <div className="col d-flex flex-column gap-2">
 
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <i className="bi bi-gear-fill"></i>
+                                <i className="bi bi-clock-history"></i>
                             </div>
                             <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Historial</h4>
                             <p className="text-body-secondary text-left">Todos los usuarios tienen su historial de tareas asignadas por semana</p>
