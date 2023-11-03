@@ -9,14 +9,24 @@ import s5 from '../assets/screens-consultorio/5s.png'
 
 export default function SectionConsultorio() {
 
-    const carbon = {
+    const title = {
+        userSelect: 'none',
+        fontSize: 30,
         color: "#07183f",
         textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+        opacity: 0.75,
+        marginBottom: -18,
       };
-    const textBlue = {
-        color: "#1e2460",
+
+    const subtitle = {
+        userSelect: 'none',
+        fontSize: 18,
+        color: "#07183f",
         textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
-    }
+        opacity: 0.75,
+        marginTop: 18,
+      };
+      
        
 
     return(
@@ -49,7 +59,7 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={carbon}>Pantalla de inicio</h1>
+                            <h1 style={title}>Pantalla de inicio</h1>
                         </div>
                     </div>
                 </div>
@@ -65,7 +75,7 @@ export default function SectionConsultorio() {
 
                     <div className="container" >
                         <div className="carousel-caption">
-                            <h1 style={carbon}>Pantalla Crear Cliente</h1>
+                            <h1 style={title}>Pantalla Crear Cliente</h1>
                         </div>
                     </div>
                 </div>
@@ -80,8 +90,8 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={carbon}>Pantalla Ver Clientes</h1>
-                            <p style={carbon}>Si se elimina un cliente se eliminan tambien sus turnos</p>
+                            <h1 style={title}>Pantalla Ver Clientes</h1>
+                            <p style={subtitle}>Si se elimina un cliente se eliminan tambien sus turnos</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +106,7 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={carbon}>Pantalla de Turnos</h1>
+                            <h1 style={title}>Pantalla de Turnos</h1>
                         </div>
                     </div>
                 </div>
@@ -111,7 +121,7 @@ export default function SectionConsultorio() {
                     </svg>
                     <div className="container">
                         <div className="carousel-caption">
-                            <h1 style={carbon}>Pantalla Modificar Turnos</h1>
+                            <h1 style={title}>Pantalla Modificar Turnos</h1>
                         </div>
                     </div>
                 </div>

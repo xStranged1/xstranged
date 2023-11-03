@@ -5,7 +5,7 @@ import casaLaCosta from '../assets/casaLaCosta.png'
 export default function SectionMyProjects() {
     return(
         <div>
-            <h1 className="visually-hidden">Proyectos</h1>
+            <h1 id='CasaLaCosta' className="visually-hidden">Proyectos</h1>
 
             <div className="container px-4 py-5" id="featured-3">
                 <h2 className="pb-2 border-bottom text-body-emphasis">Algunos de mis proyectos</h2>

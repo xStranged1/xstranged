@@ -3,9 +3,9 @@ import imgReact from '../assets/imgReact.png'
 import imgExpo from '../assets/imgExpo.png'
 import imgNotification from '../assets/imgNotification.png'
 import screenSignIn from '../assets/screens-appLimpieza/screenSignIn.png'
+import screenCreateTask from '../assets/screens-appLimpieza/screenCreateTask.png'
 import screenLogIn from '../assets/screens-appLimpieza/screenLogIn.png'
-import gif from '../assets/screens-appLimpieza/gif.gif'
-import screen1 from '../assets/screens-appLimpieza/screen1.png'
+import videoAsign from '../assets/screens-appLimpieza/videoAsign.mp4'
 import videoHome from '../assets/screens-appLimpieza/videoHome.mp4'
 import videoHist from '../assets/screens-appLimpieza/videoHist.mp4'
 import { useState } from 'react'
@@ -16,7 +16,7 @@ export default function SectionAppLimpieza(){
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
 
-    const carbon = {
+    const title = {
         userSelect: 'none',
         fontSize: 30,
         color: "#07183f",
@@ -29,24 +29,10 @@ export default function SectionAppLimpieza(){
         isVideoPlaying ? setIsVideoPlaying(false) : setIsVideoPlaying(true)
       }
     
-    const handleCarousel = () =>{
-        // console.log('hola');
-    }
-    const Video = () => {
-    
-        return(
-                <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators}>
-                    <source src={videoHome} type="video/mp4" />
-                </video>
-        )
-    }
-
-    
     return(
-        <div id='appLimpieza'>
-            <h1 className="display-5 fw-bold text-body-emphasis">appLimpieza</h1>
+        <div>
+            <h1 className="display-5 pb-2 fw-bold text-body-emphasis border-bottom">appLimpieza</h1>
             <div className="container px-4 py-5">
-                <h2 className="pb-2 border-bottom text-left">Funcionalidades</h2>
                 <div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
                 <div className="col d-flex flex-column align-items-center gap-2">          
                     <div className="d-flex align-items-center">
@@ -61,7 +47,7 @@ export default function SectionAppLimpieza(){
                         <img src={imgExpo} className="bi me-2" width="55" height="55"/>
                     </div>
                     <h3 className="fs-2 text-body">React Native, Firebase y Expo</h3>
-                    <p className="text-body-secondary text-center">Desarrollado con React Native, Firebase y Expo.</p>
+                    <p className="text-body-secondary text-center">APK Generada con EAS build</p>
                 
 
 
@@ -75,7 +61,7 @@ export default function SectionAppLimpieza(){
                             <button type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide-to="5" aria-label="Slide 6"></button>
                         </div>
                         <div className="carousel-inner">
-                            <div className="carousel-item active" data-bs-interval="10000" style={{backgroundColor: "#fff"}}>
+                            <div className="carousel-item active" data-bs-interval="15000" style={{backgroundColor: "#fff"}}>
                                 <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
                                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
                                         <image
@@ -86,11 +72,11 @@ export default function SectionAppLimpieza(){
                                 </svg>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                            <h1 style={carbon}>Sign in</h1>
+                                            <h1 style={title}>Sign in</h1>
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-bs-interval="10000">
+                            <div className="carousel-item" data-bs-interval="6500">
                                 <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
                                         <image
@@ -101,86 +87,61 @@ export default function SectionAppLimpieza(){
                                 </svg>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={carbon}>Login</h1>
+                                        <h1 style={title}>Login</h1>
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-bs-interval="60000" >
-                                            <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators}>
-                                                <source src={videoHome} type="video/mp4" />
-                                            </video>
+                            <div className="carousel-item" data-bs-interval="100000" >
+                                <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators}>
+                                    <source src={videoHome} type="video/mp4" />
+                                </video>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={carbon}>Home</h1>
+                                        <h1 style={title}>Home</h1>
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-bs-interval="60000" >
-                                        <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators} > 
-                                                <source src={videoHist} type="video/mp4" />
-                                            </video>
-
+                            <div className="carousel-item" data-bs-interval="50000" >
+                                <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators} > 
+                                    <source src={videoHist} type="video/mp4" />
+                                </video>
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={carbon}>Historial</h1>
+                                        <h1 style={title}>Historial</h1>
                                     </div>
                                 </div>
                             </div>
-                            <div className="carousel-item" data-bs-interval="10000">
+                            <div className="carousel-item" data-bs-interval="70000" >
+                                <video width="100%" height="100%" controls muted onPause={handleIndicators} onPlay={handleIndicators} > 
+                                    <source src={videoAsign} type="video/mp4" />
+                                </video>
+                                <div className="container">
+                                    <div className="carousel-caption">
+                                        <h1 style={title}>Asignar tareas</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="carousel-item" data-bs-interval="6500">
                                 <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
                                         <image
-                                            href={gif}
+                                            href={screenCreateTask}
                                             width="100%"
                                             height="100%"
                                         />
                                 </svg>
-
                                 <div className="container">
                                     <div className="carousel-caption">
-                                        <h1 style={carbon}>Pantalla2</h1>
-                                        <p style={carbon}>dfsacwqqw</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item" data-bs-interval="10000">
-                                <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-                                        <image
-                                            href={screen1}
-                                            width="100%"
-                                            height="100%"
-                                        />
-                                </svg>
-
-                                <div className="container">
-                                    <div className="carousel-caption">
-                                        <h1 style={carbon}>Pantalla3</h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="carousel-item" data-bs-interval="10000">
-                                <svg className="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-                                        <image
-                                            href={screen1}
-                                            width="100%"
-                                            height="100%"
-                                        />
-                                </svg>
-
-                                <div className="container">
-                                    <div className="carousel-caption">
-                                        <h1 style={carbon}>Pantalla4</h1>
+                                        <h1 style={title}>Crear tarea</h1>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button onClick={handleCarousel} className="carousel-control-prev" type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide="prev">
+                        <button className="carousel-control-prev" type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide="prev">
                             <span className="carousel-control-prev-icon arrow-black" style={{ filter: "invert(90%)" }}  aria-hidden="true"></span>
                             <span className="visually-hidden">Previous</span>
                         </button>
-                        <button onClick={handleCarousel} className="carousel-control-next" type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide="next">
+                        <button className="carousel-control-next" type="button" data-bs-target="#carrouselAppLimpieza" data-bs-slide="next">
                             <span className="carousel-control-next-icon arrow-black" style={{ filter: "invert(90%)" }} aria-hidden="true"></span>
                             <span className="visually-hidden">Next</span>
                         </button>

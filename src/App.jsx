@@ -18,7 +18,7 @@ function App() {
       
       <SectionMyProjects />
       <div className='b-example-divider'/>
-      <div style={{marginTop: 70}} />
+      <div id='appLimpieza'style={{marginTop: 150}} />
       <SectionAppLimpieza />
       
       <div className='b-example-divider'/>

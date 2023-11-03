@@ -14,7 +14,7 @@ export default function Footer(){
                         <li className="ms-3"><p className="text-body-secondary">fede.valle04@gmail.com</p> </li>
                         <li className="ms-3"><a className="text-body-secondary" target="_blank" href="https://www.linkedin.com/in/federico-valle-d440a/"><i className="bi bi-linkedin fs-4"></i></a></li>
                         <li className="ms-3"><a className="text-body-secondary" target="_blank" href="https://www.instagram.com/fedevalle1/"><i className="bi bi-instagram fs-4"></i></a></li>
-                        <li className="ms-3"><a className="text-body-secondary" target="_blank" href="#"><i className="bi bi-discord fs-4"></i></a></li>
+                        <li id="leesin3698" className="ms-3"><a className="text-body-secondary" href="#leesin3698"><i className="bi bi-discord fs-4"></i></a></li>
                     </ul>
             </footer>
             </div>

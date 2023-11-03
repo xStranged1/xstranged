@@ -8,7 +8,9 @@
 .text-right {
   text-align: right;
 }
-
+.invert-color {
+  filter: invert();
+}
 .ds-none {
   display: none;
 }
@@ -24,7 +26,24 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
+.align-items-baseline{
+  align-items: baseline;
+}
+.flex-reverse{
+  flex-direction: row-reverse;
+}
+.display-contents{
+  display: flex;
+}
+.mr-60{
+  margin-right: 60px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.color-ghwt{
+  color: ghostwhite;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
