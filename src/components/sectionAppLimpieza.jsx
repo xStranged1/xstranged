@@ -2,6 +2,7 @@ import imgFirebase from '../assets/imgFirebase.png'
 import imgReact from '../assets/imgReact.png'
 import imgExpo from '../assets/imgExpo.png'
 import imgNotification from '../assets/imgNotification.png'
+import circleGreen from'../assets/circle-fill.png'
 import screenSignIn from '../assets/screens-appLimpieza/screenSignIn.png'
 import screenCreateTask from '../assets/screens-appLimpieza/screenCreateTask.png'
 import screenLogIn from '../assets/screens-appLimpieza/screenLogIn.png'
@@ -199,7 +200,7 @@ export default function SectionAppLimpieza(){
                         </div>
                         <div className="col d-flex flex-column gap-2">
                             <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
-                                <i className="bi bi-collection"></i>
+                                <img src={circleGreen} width={22} alt="" />
                             </div>
                             <h4 className="fw-semibold mb-0 text-body-emphasis text-left">Estado de las tareas asignadas</h4>
                             <p className="text-body-secondary text-left">Verde si estan todas controladas, azul si estan marcadas por el usuario y amarillo si estan asignadas sin marcar </p>
